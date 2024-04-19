@@ -63,7 +63,6 @@ fileInput?.addEventListener("change", () => {
   else if(file.size > 100000)
     alert("Maximum file size exceeded. Try another photo.")
   else{
-    console.log("cock and balls torture")
     reader.readAsDataURL(file)
   }
 })
