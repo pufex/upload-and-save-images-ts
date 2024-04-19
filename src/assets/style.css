@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 16px;
+    min-width: 0;
+}
+
+:root{
+    --text-color: hsl(240, 100%, 16%);
+    --text-color-2: hsl(0, 0%, 0%);
+    --text-color-3: hsl(0, 0%, 100%);
+    --element-color: hsl(240, 100%, 25%);
+    --outline-color: rgba(0, 0, 55, 0.405);
+}
+
+body, html{
+    width: 100%;
+    min-height: 100vh;
+}
+
+.btn{
+    appearance: none;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    user-select: none;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.btn--primary{
+    height: 3rem;
+    width: 100vw;
+    max-width: 300px;
+    font-size: 1.25rem;
+    font-weight: 500;
+    border-radius: 10px;
+    border: 1px solid var(--outline-color);
+    color: var(--text-color-3);
+    background-color: var(--element-color);
+    box-shadow: 0 0 12px var(--outline-color);
+    transition: 100ms transform ease-out;
+}
+
+.btn--primary:active{
+    transition: 10ms transform ease-out;
+    transform: scale(0.975);
+    box-shadow: 
+        inset -2px 2px 6px black,
+        0 0 6px var(--outline-color)
+    ;
+}
+
+body{
+    background-color: rgb(164, 234, 207);
+}
+
+.body--child{
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+}
+
+.heading{
+    font-size: 3rem;
+    color: var(--text-color);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.disclaimer{
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--text-color-2);
+    margin-bottom: 3rem;
+}
+
+.paragraph{
+    font-size: 1.25rem;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.main{
+    padding: 3rem;
+}
+
+.controls{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 2rem;
+}
+
+.gallery__empty-message{
+    font-size: 2rem;
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.gallery__image{
+    width: auto;
+    object-fit: cover;
+    max-width: 100%;
+}

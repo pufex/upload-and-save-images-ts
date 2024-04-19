@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/assets/style.css">
+    <title>Upload and save images TS</title>
+  </head>
+  <body>
+    <header class="header body--child">
+      <h1
+        class="heading"
+      >
+        Dynamic Image Gallery
+      </h1>
+      <h2
+        class="disclaimer"
+      >
+        (Saved to local storage too!)
+      </h2>
+      <p class="paragraph">
+        The idea to upload custom images and preserve them after site reload was brought to me while I was working on my <a class="link" href="https://github.com/pufex/shopping-list-react-ts">Shopping List App</a>. User has the ability to add his own product to the app, which includes name, price and, of course, custom image.
+      </p>
+      <p class="paragraph">
+        The app is made in React TS, and at the moment of making this preview website, I have not implemented this functionality. However, I'm not gonna give it up, even if it's very difficult!
+      </p>
+      <p class="paragraph">
+        If you like my work and wish to see more of my projects, I recommend you to <a class="link" href="https://github.com/pufex">Check out my Github</a>!
+      </p>
+    </header>
+    <main class="main body--child">
+      <div class="controls">
+        <div class="control control--place-file">
+          <input type="file" name="file" id="fileInput" style="display: none;">
+          <button
+            class="btn btn--primary btn--place-files"
+          >
+            Add image!
+          </button>
+        </div>
+        <div class="control control--clear-gallery">
+          <button
+            class="btn btn--primary btn--clear-gallery"
+          >
+            Clear gallery  
+          </button>
+        </div>
+      </div>
+      <div class="gallery"></div>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
